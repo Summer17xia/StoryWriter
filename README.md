@@ -4,4 +4,5 @@ To address these challenges, we propose \ourmethod, a multi-agent story generati
 Furthermore, we use \ourmethod to generate a dataset, which contains about $6,000$ high-quality long stories, with an average length of $8,000$ words. We train the model Llama3.1-8B and GLM4-9B using supervised fine-tuning on \ourdataset and develop \ourmodelllama and \ourmodelglm, which demonstrates advanced performance in long story generation.
 
 Get the generated story from https://cloud.tsinghua.edu.cn/f/6173850b58114951ab7e/
+
 Train your own longstory llm using LongWriter:https://github.com/THUDM/LongWriter/tree/main 

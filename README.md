@@ -5,4 +5,4 @@ Furthermore, we use \ourmethod to generate a dataset, which contains about $6,00
 
 Get the generated story from https://cloud.tsinghua.edu.cn/f/6173850b58114951ab7e/
 
-Train your own longstory llm using LongWriter:https://github.com/THUDM/LongWriter/tree/main 
+Train your own longstory llm using LongWriter:https://github.com/THUDM/LongWriter/tree/main . Replace the raw file using our traing json file.

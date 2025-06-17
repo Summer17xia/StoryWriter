@@ -1,8 +1,75 @@
-# StoryWriter
-Long story generation remains a challenge for existing large language models (LLMs), primarily due to two main factors: (1) discourse coherence, which requires plot consistency, logical coherence, and completeness in the long-form generation, and (2) narrative complexity, which requires an interwoven and engaging narrative.
-To address these challenges, we propose \ourmethod, a multi-agent story generation framework, which consists of three main modules: (1) outline agent, which generates event-based outlines containing rich event plots, character, and event-event relationships. (2) planning agent, which further details events and plans which events should be written in each chapter to maintain an interwoven and engaging story. (3) writing agent, which dynamically compresses the story history based on the current event to generate and reflect new plots, ensuring the coherence of the generated story. We conduct both human and automated evaluation, and \ourmethod significantly outperforms existing story generation baselines in both story quality and length. 
-Furthermore, we use \ourmethod to generate a dataset, which contains about $6,000$ high-quality long stories, with an average length of $8,000$ words. We train the model Llama3.1-8B and GLM4-9B using supervised fine-tuning on \ourdataset and develop \ourmodelllama and \ourmodelglm, which demonstrates advanced performance in long story generation.
+以下是美化和优化后的 `README.md`，保持原意不变，但更清晰、结构更分明，并加入了适当的 Markdown 格式：
 
-Get the generated story from https://cloud.tsinghua.edu.cn/f/6173850b58114951ab7e/
+---
 
-Train your own longstory llm using LongWriter:https://github.com/THUDM/LongWriter/tree/main . Replace the raw file using our traing json file.
+# 📝 StoryWriter
+
+**StoryWriter** is a multi-agent framework for generating high-quality **long stories** with logical coherence and engaging plots—two major challenges that remain unsolved for most current large language models (LLMs).
+
+---
+
+## ✨ Highlights
+
+Long story generation is hard due to:
+
+1. **Discourse Coherence**
+   Maintaining consistency, logic, and completeness throughout the story.
+
+2. **Narrative Complexity**
+   Crafting engaging, interwoven plots across characters and events.
+
+To tackle these, we introduce **`StoryWriter`**, a **multi-agent story generation framework** with the following components:
+
+* **🧠 Outline Agent**
+  Produces event-based outlines rich in plots, characters, and inter-event relationships.
+
+* **🗂️ Planning Agent**
+  Breaks down the outline into chapter-wise plans, ensuring an engaging, interwoven narrative.
+
+* **✍️ Writing Agent**
+  Dynamically compresses the story history to generate coherent new content aligned with the current event.
+
+---
+
+## 📊 Results
+
+We conduct both human and automatic evaluations, and **StoryWriter** significantly **outperforms** existing baselines in:
+
+* **Story quality**
+* **Story length**
+
+---
+
+## 📚 Dataset
+
+We use StoryWriter to generate a large-scale long story dataset:
+
+* **\~6,000 stories**
+* **Average length: 8,000 words/story**
+
+---
+
+## 🔧 Model Training
+
+Using this dataset, we fine-tuned:
+
+* **`LLaMA3.1-8B` → `StoryWriter-LLaMA`**
+* **`GLM4-9B` → `StoryWriter-GLM`**
+
+These models exhibit strong performance in long-form story generation.
+
+---
+
+## 📥 Get Started
+
+* **📖 Read Sample Stories**
+  Download generated stories here:
+  👉 [Tsinghua Cloud Link](https://cloud.tsinghua.edu.cn/f/6173850b58114951ab7e/)
+
+* **🛠️ Train Your Own Model**
+  Use [LongWriter](https://github.com/THUDM/LongWriter/tree/main) to train on our dataset.
+  Replace the original raw file with our training JSON.
+
+---
+
+Let me know if你还需要中英文版本、自动插图、badge（例如model size/accuracy）或演示链接等增强内容。

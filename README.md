@@ -1,7 +1,3 @@
-以下是美化和优化后的 `README.md`，保持原意不变，但更清晰、结构更分明，并加入了适当的 Markdown 格式：
-
----
-
 # 📝 StoryWriter
 
 **StoryWriter** is a multi-agent framework for generating high-quality **long stories** with logical coherence and engaging plots—two major challenges that remain unsolved for most current large language models (LLMs).
@@ -69,7 +65,3 @@ These models exhibit strong performance in long-form story generation.
 * **🛠️ Train Your Own Model**
   Use [LongWriter](https://github.com/THUDM/LongWriter/tree/main) to train on our dataset.
   Replace the original raw file with our training JSON.
-
----
-
-Let me know if你还需要中英文版本、自动插图、badge（例如model size/accuracy）或演示链接等增强内容。

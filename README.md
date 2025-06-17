@@ -31,12 +31,6 @@ To tackle these, we introduce **`StoryWriter`**, a **multi-agent story generatio
 
 We conduct both human and automatic evaluations, and **StoryWriter** significantly **outperforms** existing baselines in:
 
-以下是将你提供的 LaTeX 表格 **转化成 Markdown 表格** 的版本，适合放在 README 或 Markdown 文档中使用（注意 Markdown 表格不支持复杂合并、换行和自动缩放，但可以用简洁清晰的方式呈现核心内容）：
-
----
-
-### 📊 Experimental Results (%) of StoryWriter Variants and Baselines
-
 > * `S_q`: Average quality score over 6 dimensions
 > * `S_l`: Length score (see Equation\~\ref{eq\:eq\_sl})
 > * `S̄`: Final score, computed as `(S_q + 20 × S_l) / 2`
@@ -56,33 +50,12 @@ We conduct both human and automatic evaluations, and **StoryWriter** significant
 
 ---
 
-如你需要更好看的交互式表格效果，建议：
-
-* 用 HTML 表格嵌入 Markdown
-* 或在网页中使用 JS 表格库（如 DataTables）
-
-如需我进一步生成 HTML 版本或插入图表、强调趋势，也可以继续告诉我。
-
-
----
-
 ## 📚 Dataset
 
 We use StoryWriter to generate a large-scale long story dataset:
 
 * **\~6,000 stories**
 * **Average length: 8,000 words/story**
-
----
-
-## 🔧 Model Training
-
-Using this dataset, we fine-tuned:
-
-* **`LLaMA3.1-8B` → `StoryWriter-LLaMA`**
-* **`GLM4-9B` → `StoryWriter-GLM`**
-
-These models exhibit strong performance in long-form story generation.
 
 ---
 

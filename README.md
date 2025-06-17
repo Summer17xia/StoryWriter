@@ -41,8 +41,7 @@ We conduct both human and automatic evaluations, and **StoryWriter** significant
 > * `S_l`: Length score (see Equation\~\ref{eq\:eq\_sl})
 > * `S̄`: Final score, computed as `(S_q + 20 × S_l) / 2`
 > * **Bold** indicates the best result in each column
-|                            | **S̄**   | S\_l     | S\_q    | \[0,1k)                | \[1k,2k)                | \[2k,4k)                | \[4k,10k)                | \[10k,20k)                |
-| Model                      | **S̄**   | S\_l     | S\_q    |         S\_l | S\_q    |          S\_l | S\_q    |          S\_l | S\_q    |           S\_l | S\_q    |            S\_l | S\_q    |
+| Model                      | **S̄**   | S\_l     | S\_q    | \[0,1k) S\_l | S\_q    | \[1k,2k) S\_l | S\_q    | \[2k,4k) S\_l | S\_q    | \[4k,10k) S\_l | S\_q    | \[10k,20k) S\_l | S\_q    |
 | -------------------------- | -------- | -------- | ------- | ------------ | ------- | ------------- | ------- | ------------- | ------- | -------------- | ------- | --------------- | ------- |
 | **Llama3.1-8B-Instruct**   | 46.6     | 34.5     | 2.9     | 89.0         | 4.0     | 83.7          | 3.9     | 0.0           | 3.5     | 0.0            | 2.2     | 0.0             | 1.0     |
 | **GLM4-9B**                | 47.3     | 36.6     | 2.9     | 93.7         | 4.2     | 89.6          | 4.0     | 0.0           | 3.3     | 0.0            | 2.0     | 0.0             | 1.0     |
@@ -53,6 +52,7 @@ We conduct both human and automatic evaluations, and **StoryWriter** significant
 | **GPT-4o**                 | 67.4     | 52.8     | **4.1** | 92.3         | **4.7** | 91.7          | **4.5** | 62.0          | **4.3** | 15.3           | **3.7** | 2.7             | 3.3     |
 | **StoryWriter-LLaMA**      | 73.4     | 75.3     | 3.5     | 90.8         | 3.9     | 94.1          | 3.8     | 77.3          | 3.5     | 77.0           | 3.4     | 27.7            | 3.4     |
 | **StoryWriter-GLM**        | **83.7** | **88.5** | 3.9     | **99.5**     | 4.4     | **99.3**      | 4.1     | **98.0**      | 4.0     | **88.7**       | 3.5     | **57.3**        | **3.6** |
+
 
 ---
 

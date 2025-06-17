@@ -40,7 +40,7 @@ We conduct both human and automatic evaluations, and **StoryWriter** significant
 
 We use StoryWriter to generate a large-scale long story dataset:
 
-* **\~6,000 stories**
+* **\~5,000 stories**
 * **Average length: 8,000 words/story**
 
 ---
